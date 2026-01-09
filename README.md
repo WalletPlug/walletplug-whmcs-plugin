@@ -68,7 +68,7 @@ Support
 If you need help installing or using the WalletPlug WHMCS plugin, contact our developer support team:
 
 Email
-devt@walletplug.com
+dev@walletplug.com
 
 Our team can help with:
 Plugin setup
