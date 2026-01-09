@@ -83,7 +83,7 @@ If you need help installing or using the WalletPlug WHMCS plugin, contact our de
 
 <p>
 <strong>Email</strong><br>
-dev@walletplug
+dev@walletplug.com
 </p>
 
 <p>Our team can help with:</p>
