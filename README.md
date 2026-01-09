@@ -1,77 +1,96 @@
-WalletPlug WHMCS Plugin
-
+<h1>WalletPlug WHMCS Plugin</h1>
+<p>
 Accept local and international payments in WHMCS using WalletPlug multi currency wallets cards and global payment APIs.
+</p>
 
-Quick Installation Guide
+<hr>
 
-1 Download and Upload
+<h2>Quick Installation Guide</h2>
 
+<h3>1 Download and Upload</h3>
+<p>
 Upload the plugin zip to your WHMCS root folder and extract it.
-Make sure these files exist:
+</p>
+<p>Make sure these files exist:</p>
 
-/modules/gateways/walletplug.php  
+<pre>
+/modules/gateways/walletplug.php
 /modules/gateways/callback/walletplug.php
+</pre>
 
----------------------------------------------
-2 Activate in WHMCS
+<hr>
 
-Log in to your WHMCS admin panel and go to:
+<h3>2 Activate in WHMCS</h3>
+<p>Log in to your WHMCS admin panel and go to:</p>
 
+<pre>
 Setup → Payments → Payment Gateways
+</pre>
 
-Select WalletPlug and click Activate
-----------------------------------------------
+<p>
+Select <strong>WalletPlug</strong> and click <strong>Activate</strong>.
+</p>
 
-3 Configure API Credentials
+<hr>
 
-Enter the following values:
+<h3>3 Configure API Credentials</h3>
 
-API Base URL
-walletplug com
+<p>Enter the following values:</p>
 
-Merchant ID and API Key
-From your WalletPlug dashboard
+<ul>
+  <li><strong>API Base URL</strong><br>walletplug</li>
+  <li><strong>Merchant ID and API Key</strong><br>From your WalletPlug dashboard</li>
+  <li><strong>Webhook Secret Key</strong><br>From your WalletPlug dashboard</li>
+  <li><strong>Test Mode</strong><br>Enable for sandbox testing</li>
+</ul>
 
-Webhook Secret Key
-From your WalletPlug dashboard
+<p>Click <strong>Save Changes</strong>.</p>
 
-Test Mode
-Enable for sandbox testing
+<hr>
 
-Click Save Changes
+<h3>4 Set Webhook Callback</h3>
 
-===============================================
+<p>In your WalletPlug dashboard, set the webhook URL to:</p>
 
-4 Set Webhook Callback
+<pre>
+walletplug/modules/gateways/callback/walletplug php
+</pre>
 
-In your WalletPlug dashboard, set the webhook URL to:
-
-walletplug com/modules/gateways/callback/walletplug php
-
-
+<p>
 Make sure the Webhook Secret Key matches in both systems.
+</p>
 
-===============================================
+<hr>
 
-5 Test and Go Live
+<h3>5 Test and Go Live</h3>
 
-Create a test invoice in WHMCS
-Complete a sandbox payment
+<ul>
+  <li>Create a test invoice in WHMCS</li>
+  <li>Complete a sandbox payment</li>
+</ul>
 
-Once successful, disable Test Mode to start accepting real payments.
+<p>
+Once successful, disable <strong>Test Mode</strong> to start accepting live payments.
+</p>
 
-================================================
+<hr>
 
+<h2>Support</h2>
 
-Support
+<p>
+If you need help installing or using the WalletPlug WHMCS plugin, contact our developer support team.
+</p>
 
-If you need help installing or using the WalletPlug WHMCS plugin, contact our developer support team:
+<p>
+<strong>Email</strong><br>
+dev@walletplug
+</p>
 
-Email
-dev@walletplug.com
+<p>Our team can help with:</p>
 
-Our team can help with:
-Plugin setup
-API keys
-Webhook configuration
-Live mode activation
+<ul>
+  <li>Plugin setup</li>
+  <li>API keys</li>
+  <li>Webhook configuration</li>
+  <li>Live mode activation</li>
+</ul>
